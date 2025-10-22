@@ -49,7 +49,7 @@ class ResponseResource extends JsonResource
      */
     public function withResponse($request, $response)
     {
-        foreach (config('base.response.headers') as $key => $value) {
+        foreach (config('base-laravel.response.headers') as $key => $value) {
             $response->header($key, $value);
         }
     }

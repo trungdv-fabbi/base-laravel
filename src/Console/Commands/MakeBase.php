@@ -32,9 +32,9 @@ class MakeBase extends Command
     public function __construct(private readonly Helper $helper)
     {
         parent::__construct();
-        $this->projectName = config('base.project_name');
-        $this->phpVersion = config('base.php_version');
-        $this->mysqlVersion = config('base.mysql_version');
+        $this->projectName = config('base-laravel.project_name');
+        $this->phpVersion = config('base-laravel.php_version');
+        $this->mysqlVersion = config('base-laravel.mysql_version');
     }
 
     /**

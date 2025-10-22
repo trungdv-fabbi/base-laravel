@@ -21,8 +21,9 @@ class InitBaseProvider extends ServiceProvider
 
         // merge config
         $this->mergeConfigFrom(
-            __DIR__ . '/../Config/base.php', 'base'
+            __DIR__ . '/../Config/base-laravel.php', 'base-laravel'
         );
+
         // register commands
         $this->commands($this->commands);
     }
@@ -32,6 +33,10 @@ class InitBaseProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // publish config
+        $this->publishes([
+            __DIR__.'/../Config/base-laravel.php' => config_path('base-laravel.php'),
+        ], 'base-laravel-config');
         //
     }
 }

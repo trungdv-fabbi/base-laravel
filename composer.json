@@ -41,11 +41,6 @@
             "TrungDV\\BaseLaravel\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "TrungDV\\BaseLaravel\\Tests\\": "tests/"
-        }
-    },
     "extra": {
         "laravel": {
             "providers": [
