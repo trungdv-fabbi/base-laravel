@@ -1,9 +1,9 @@
 <?php
 
-namespace Trungdv\Initbase\Console\Commands;
+namespace TrungDV\BaseLaravel\Console\Commands;
 
 use Illuminate\Console\Command;
-use Trungdv\Initbase\Helper;
+use TrungDV\BaseLaravel\Helper;
 use Illuminate\Support\Facades\Artisan;
 
 class MakeBase extends Command
@@ -43,17 +43,6 @@ class MakeBase extends Command
     public function handle()
     {
         $this->makeBaseDocker();
-//        $this->makeAPartInLaravel();
-    }
-
-    /**
-     * makeAPartInLaravel
-     *
-     * @return void
-     */
-    private function makeAPartInLaravel(): void
-    {
-        Artisan::call('');
     }
 
     /**

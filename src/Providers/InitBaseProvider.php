@@ -1,19 +1,24 @@
 <?php
 
-namespace Trungdv\Initbase\Providers;
+namespace TrungDV\BaseLaravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
 class InitBaseProvider extends ServiceProvider
 {
     public array $commands = [
-        \Trungdv\Initbase\Console\Commands\MakeBase::class,
+        \TrungDV\BaseLaravel\Console\Commands\MakeBase::class,
     ];
     /**
      * Register services.
      */
     public function register(): void
     {
+        // Register Helper as singleton
+        $this->app->bind('base-laravel', function() {
+            return new \TrungDV\BaseLaravel\Helper();
+        });
+
         // merge config
         $this->mergeConfigFrom(
             __DIR__ . '/../Config/base.php', 'base'

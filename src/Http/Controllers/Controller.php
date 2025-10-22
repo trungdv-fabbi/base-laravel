@@ -1,6 +1,6 @@
 <?php
 
-namespace Trungdv\Initbase\Http\Controllers;
+namespace TrungDV\BaseLaravel\Http\Controllers;
 
 abstract class Controller
 {

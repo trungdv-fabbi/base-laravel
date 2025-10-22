@@ -1,9 +1,9 @@
 <?php
 
-namespace Trungdv\Initbase;
+namespace TrungDV\BaseLaravel;
 
 use Illuminate\Support\Facades\File;
-use Trungdv\Initbase\Resources\ResponseResource;
+use TrungDV\BaseLaravel\Resources\ResponseResource;
 
 class Helper {
     protected $ds = DIRECTORY_SEPARATOR;
@@ -59,7 +59,7 @@ class Helper {
     public function getTemplate($templateFileName, $search=null, $replace=null): string
     {
         $template = File::get(__DIR__ . $this->ds . 'Stubs' . $this->ds . $templateFileName . '.stub');
-        return str_replace($search, $replace, $template);
+        return str_replace($search ?? [], $replace ?? [], $template);
     }
 
     /**

@@ -1,17 +1,65 @@
 {
-    "name": "trungdv/initbase",
+    "name": "trungdv/base-laravel",
+    "description": "Base Laravel Package - Quick Docker environment setup for Laravel development",
+    "keywords": [
+        "laravel",
+        "docker",
+        "nginx",
+        "mysql",
+        "development",
+        "environment",
+        "base",
+        "init"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "trungdv-fabbi",
+            "email": "trungdv@fabbi.io",
+            "homepage": "https://github.com/trungdv"
+        }
+    ],
+    "homepage": "https://github.com/trungdv-fabbi/base-laravel",
+    "support": {
+        "issues": "https://github.com/trungdv-fabbi/base-laravel/issues",
+        "source": "https://github.com/trungdv-fabbi/base-laravel"
+    },
     "require": {
-        "instance-code/repository": "^1.0"
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/console": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/http": "^9.0|^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.0|^11.0",
+        "mockery/mockery": "^1.0",
+        "laravel/framework": "^9.0|^10.0|^11.0|^12.0"
     },
     "autoload": {
         "psr-4": {
-            "Trungdv\\Initbase\\": "src/"
+            "TrungDV\\BaseLaravel\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "RC-trungdv",
-            "email": "trungdv@racool.net"
+    "autoload-dev": {
+        "psr-4": {
+            "TrungDV\\BaseLaravel\\Tests\\": "tests/"
         }
-    ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TrungDV\\BaseLaravel\\Providers\\InitBaseProvider"
+            ],
+            "aliases": {
+                "BaseLaravel": "TrungDV\\BaseLaravel\\Facades\\BaseLaravel"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    }
 }

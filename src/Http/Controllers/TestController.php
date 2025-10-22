@@ -1,6 +1,6 @@
 <?php
 
-namespace Trungdv\Initbase\Http\Controllers;
+namespace TrungDV\BaseLaravel\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -8,6 +8,6 @@ class TestController extends Controller
 {
     public function test()
     {
-        return 'xxx';
+        return '';
     }
 }

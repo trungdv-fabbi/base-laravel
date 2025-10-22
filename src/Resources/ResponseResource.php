@@ -1,6 +1,6 @@
 <?php
 
-namespace  Trungdv\Initbase\Resources;
+namespace TrungDV\BaseLaravel\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use Symfony\Component\HttpFoundation\Response as ResponseStatus;
