@@ -1,0 +1,12 @@
+[xdebug]
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.discover_client_host=0
+xdebug.client_host=host.docker.internal
+xdebug.client_port=9000
+xdebug.log=/tmp/xdebug.log
+upload_max_filesize = 60M
+post_max_size = 60M
+max_execution_time = 300
+extension=grpc.so
+memory_limit = 512M

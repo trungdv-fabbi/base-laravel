@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f63a8fe198d3f0a76cf95fe8f2372d0c",
+    "packages": [
+        {
+            "name": "instance-code/repository",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/instance-code/repository.git",
+                "reference": "a0a1ae1dcdb20b8a39098b1f1c681c32790a58c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/instance-code/repository/zipball/a0a1ae1dcdb20b8a39098b1f1c681c32790a58c8",
+                "reference": "a0a1ae1dcdb20b8a39098b1f1c681c32790a58c8",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "InstanceCode\\Repository\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tan Nguyen",
+                    "email": "tannq@fabbi.io"
+                }
+            ],
+            "description": "A simple way to access repositories and services with laravel framework",
+            "keywords": [
+                "Laravel Repository",
+                "instance-code",
+                "php repository"
+            ],
+            "support": {
+                "issues": "https://github.com/instance-code/repository/issues",
+                "source": "https://github.com/instance-code/repository/tree/v1.0.5"
+            },
+            "time": "2023-09-04T10:19:55+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

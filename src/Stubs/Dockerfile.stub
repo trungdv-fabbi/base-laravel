@@ -1,0 +1,5 @@
+FROM trungdvfabbi/php-pecl:php{PHP_VERSION}
+
+WORKDIR /usr/share/nginx/html
+
+EXPOSE 9000

@@ -1,0 +1,17 @@
+{
+    "name": "trungdv/initbase",
+    "require": {
+        "instance-code/repository": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Trungdv\\Initbase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RC-trungdv",
+            "email": "trungdv@racool.net"
+        }
+    ]
+}
